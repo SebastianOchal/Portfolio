@@ -2,12 +2,32 @@
     /* dark mode colours */
     --dark-gray: #2A2A2A;
     --gray:#5b656d;
+    --gray2:#333333;
     --navey:#000050;
     --blue:#005da0;
     --highlight-blue:#00DEFF;
     --alice-blue: #f0f8ff;
 }
 body{
+    height: 100vh;
+    margin: 0;
+    background-color: #005a51;
+}
+.background{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: 
+    radial-gradient(circle at bottom right,#333333 70%,var(--gray)70%,transparent 71%,transparent 71%, #2a2a2a 71% );
+    mask-image: 
+    radial-gradient(circle at bottom right,#005da0 70%, transparent 70%,transparent 71%,#005da0 71%);
+}
+.pattern{
+    background-image: 
+    radial-gradient(circle,aliceblue 1px,transparent 1px);
+    background-size: 20px 20px;
+    mask-image:
+    radial-gradient(circle at bottom,#2a2a2a, transparent);
 }
 @media (max-width: 1279px){
 }
