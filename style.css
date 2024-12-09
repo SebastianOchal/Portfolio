@@ -19,6 +19,10 @@ body{
     width: 100%;
     margin: 0;
 }
+#pattern{
+    height: 100%;
+    width: 100%;
+}
 .circle{
     background-color: aliceblue;
     position: fixed;
