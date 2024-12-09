@@ -17,7 +17,7 @@ function dots(){
         // dot opacity
         let brightness = (Math.floor(Math.random() * 10)+1)/10;
         dot.style.opacity = brightness;
-        
+
         if (i<5)
             {const dot = document.createElement("div")
                 dot.classList.add("circle2")
@@ -28,5 +28,7 @@ function dots(){
                 dot.size = Math.floor(5 * Math.random());
                 dot.style.height = dot.size + "px";
                 dot.style.width = dot.size + "px";}
+
+                dot.style.opacity = brightness;
     }
 }
