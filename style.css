@@ -12,8 +12,10 @@ body{
     height: 100vh;
     margin: 0;
     background-color: #005a51;
+    color: aliceblue;
 }
 .background{
+    position: absolute;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -22,12 +24,34 @@ body{
     mask-image: 
     radial-gradient(circle at bottom right,#005da0 70%, transparent 70%,transparent 71%,#005da0 71%);
 }
-.pattern{
+/* #pattern{
     background-image: 
     radial-gradient(circle,aliceblue 1px,transparent 1px);
     background-size: 20px 20px;
     mask-image:
     radial-gradient(circle at bottom,#2a2a2a, transparent);
+    display: flex;
+} */
+.content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.circle{
+    background-color: aliceblue;
+    position: fixed;
+    border-radius: 50%;
+    margin: 3px;
+}
+.circle2{
+    background-color: var(--highlight-blue);
+    position: fixed;
+    border-radius: 50%;
+    margin: 3px;
+}
+header{
+    position: relative;
+    z-index: 1;
 }
 @media (max-width: 1279px){
 }
