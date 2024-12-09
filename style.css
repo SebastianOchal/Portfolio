@@ -4,15 +4,17 @@
     --gray:#5b656d;
     --gray2:#333333;
     --navey:#000050;
-    --blue:#005da0;
-    --highlight-blue:#00DEFF;
+    --blue:rgb(0, 93, 160);
+    --highlight-blue:rgb(0, 222, 255);
     --alice-blue: #f0f8ff;
 }
 body{
     height: 100vh;
     margin: 0;
-    background-color: var(--dark-gray);
+    background-image: 
+    radial-gradient(circle at bottom,var(--dark-gray), black);
 }
+/* *Background divs */
 .background{
     position: absolute;
     height: 100%;
@@ -20,25 +22,82 @@ body{
     margin: 0;
 }
 #pattern{
-    height: 100%;
-    width: 100%;
+    background-image: 
+    radial-gradient(circle at top left, var(--gray2)2px,var(--dark-gray)2px,var(--dark-gray)3px,transparent 3px),
+    radial-gradient(circle at top right, var(--gray2)2px,var(--dark-gray)2px,var(--dark-gray)3px,transparent 3px),
+    radial-gradient(circle at bottom left, var(--gray2)2px,var(--dark-gray)2px,var(--dark-gray)3px,transparent 3px),
+    radial-gradient(circle at bottom right, var(--gray2)2px,var(--dark-gray)2px,var(--dark-gray)3px,transparent 3px),
+    linear-gradient(90deg, var(--gray2)1px, transparent 1px),
+    linear-gradient( var(--gray2)1px, transparent 1px);
+    background-size: 30px 30px;
+    mask-image: radial-gradient(circle at bottom, black,transparent);
+    z-index: -5;
 }
 .circle{
     background-color: aliceblue;
     position: fixed;
     border-radius: 50%;
     margin: 3px;
+    z-index: -4;
 }
 .circle2{
     background-color: var(--highlight-blue);
     position: fixed;
     border-radius: 50%;
     margin: 3px;
+    z-index: -4;
 }
-header{
-    position: relative;
-    z-index: 1;
+.plannet{
+    border-radius: 50%;
+    height: 400px;
+    width:400px;
+    bottom: 50%;
+    left:50%;
+    background-image:
+    linear-gradient(-150deg,var(--navey) 10%,var(--blue),var(--gray)80%); 
 }
+.shadows{
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    background-image: radial-gradient(circle at 360px 0px,rgba(255, 255, 255, 0.8) 1%,transparent ,rgb(8, 8, 9) 80%);
+    box-shadow: -1px 1px 30px 3px rgba(255, 255, 255, 0.3);
+}
+.moon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(-120deg,var(--gray),var(--gray2)70%);
+    background-size: 400%;
+    box-shadow: 5px -5px 10px 1px rgba(0, 0, 0, 0.7) inset;
+    transform: translate(0px, 250px);
+    position: absolute;
+    animation: orbit 15s ease-in-out infinite;
+}
+@keyframes orbit {
+    0%{
+        transform: translate(-100px, 250px);
+        box-shadow: -10px 10px 60px 3px rgba(255, 255, 255, 1);
+        background-position: left;
+    }
+    25%{
+        box-shadow: -3px 3px 0px 0px rgba(0, 0, 0, 0.4);
+    }
+    50%{
+        transform: translateX(400px);
+        box-shadow: -10px 10px 60px 3px rgba(255, 255, 255, 1);
+        background-position: right;
+    }
+    75%{
+        box-shadow: -3px 3px 0px 0px rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        transform: translate(-100px, 250px);
+        box-shadow: -10px 10px 60px 3px rgba(255, 255, 255, 1);
+        z-index: -1;
+    }
+}
+/* *Background divs */
 @media (max-width: 1279px){
 }
     
