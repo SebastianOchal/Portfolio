@@ -101,7 +101,6 @@ body{
 .foreground{
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 247, 255, 0.377);
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -111,28 +110,51 @@ body{
 .space{
     width: 100%;
     height: 700px;
-}
-#navBacker{
-    background-color: var(--dark-gray);
-    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
     display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 0;
+    flex-direction: row-reverse;
+    align-items: flex-end;
 }
 #navBar{
-    background-color: #5b656d;
-    clip-path: polygon(1% 0, 99% 0, 94% 100%, 6% 100%);
-    border-bottom: solid 10px var(--dark-gray);
+    background-image:  
+    /* radial-gradient(circle,rgba(0, 0, 0, 0.493),transparent), */
+    linear-gradient(45deg,transparent 5%,rgb(31, 31, 31) 5%,rgb(31, 31, 31) 6%,var(--blue) 6%,var(--blue) 7%,var(--gray) 7%,transparent 45%),
+    linear-gradient(-45deg, transparent 50%,rgb(31, 31, 31) 50%,rgb(31, 31, 31) 51%,var(--gray2)51%,var(--gray)),
+    linear-gradient(-45deg,transparent 40%, black 55%),
+    linear-gradient(var(--blue) 15%, var(--dark-gray) 15%, var(--dark-gray) 80%, transparent 70%);
+    mask-image:linear-gradient(45deg,transparent 5%,black 5%);
+    display: flex;
+    position: sticky;
+    top: 0;
 }
 .heroT{
     margin: 0;
     font-size: 70px;
-    text-align: center;
+    position: relative;
+    left: 100px;
+    border-bottom: solid 1px var(--blue);
+
 }
 #projects{
-    background-color: #795c5c;
+    background-image: radial-gradient(circle,transparent,rgb(31, 31, 31)),
+    linear-gradient(white 1px,rgb(31, 31, 31) 0.5%, var(--gray2));
 }
+.pTcontainer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: self-end;
+}
+.projectT{
+    border-top: solid 1px aliceblue;
+    border-left: solid 60px transparent;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 50px;
+}
+.decText{
+    margin: 0;
+}
+
+
 @media (max-width: 1279px){
 }
     
