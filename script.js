@@ -1,7 +1,7 @@
 const backgroundImage = document.getElementById("stars")
 
+// * Background starController
 document.addEventListener("DOMContentLoaded",dots);
-
 function dots(){
     for (let i = 0; i < 200; i++) {
         const dot = document.createElement("div");
@@ -32,3 +32,31 @@ function dots(){
                 dot.style.opacity = brightness;
     }
 }
+// * Slide Controller
+let slides = document.querySelectorAll(".slide")
+let slideLoop = Array.from(slides);
+function displaySlides(){
+    console.log(slideLoop);
+    let shownSlides = slideLoop.slice(0,4);
+    shownSlides.forEach((slide, i) =>{
+        slide.classList.remove("slide0");
+        slide.classList.remove("slide1");
+        slide.classList.remove("slide2");
+        slide.classList.remove("slide3");
+    });
+    shownSlides.forEach((slide,i) =>{
+        slide.classList.add(`slide${i}`);
+    })
+}
+function slideNext(){
+    slideLoop.push(slideLoop.shift());
+    displaySlides()
+}
+function slidePrev(){
+    slideLoop.unshift(slideLoop.pop());
+    displaySlides()
+}
+const next = document.getElementById("next")
+const back = document.getElementById("back")
+next.onclick = slideNext;
+back.onclick = slidePrev;   
