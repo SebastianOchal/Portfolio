@@ -6,7 +6,7 @@ function dots(){
     for (let i = 0; i < 200; i++) {
         const dot = document.createElement("div");
         // dot position
-        dot.classList.add("circle");
+        dot.classList.add("star");
         backgroundImage.appendChild(dot);
         dot.style.top = (window.innerHeight * Math.random())+"px";
         dot.style.left = (window.innerWidth * Math.random())+"px";
@@ -20,7 +20,7 @@ function dots(){
 
         if (i<75)
             {const dot = document.createElement("div");
-                dot.classList.add("circle2");
+                dot.classList.add("star2");
                 backgroundImage.appendChild(dot);
                 dot.style.top = (window.innerHeight * Math.random())+"px";
                 dot.style.left = (window.innerWidth * Math.random())+"px";
