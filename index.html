@@ -12,7 +12,7 @@
     <title>Portfolio</title>
 </head>
 <body class>
-    <div class="background">
+    <div class="background backgroundContainer">
         <div class ="background" id="pattern"></div>
         <div class="background" id="stars"></div>
         <div class="background plannet">
@@ -21,12 +21,33 @@
             <div class="shadows"></div>
         </div>
     </div>
-    <main>
-        <nav class="NavContainer">
-            <h2>[ NAVIGATION# ]</h2>
-            <h1>SEBASTIAN OCHAL</h1>
-            <a href="#"></a>ABOUT<a href="#">PROJECTS</a><a href="#">CONTACT ME</a>
+    <header>
+        <nav id="navContainer">
+            <h2 id="navMenu" class ="sideTitle">[ NAVIGATION# ]</h2>
+            <div id = "linkContainer">
+                <h1 class = "heroTitle">SEBASTIAN OCHAL</h1>
+                <a class="navLinks" href="#">CONTACT ME</a><a class="navLinks" href="#">PROJECTS</a><a class="navLinks" href="#">ABOUT</a>
+            </div>
         </nav>
+    </header>
+    <main id="contentContainer">
+        <div class = "empty"></div>
+        <section id = "about">
+            <h2 class="aboutTitle">[ ABOUT# ]</h2>
+            <p class = "aboutContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, minus maiores corrupti temporibus labore nam, quia quas placeat voluptatibus reprehenderit delectus pariatur minima itaque vel ab quam veniam atque praesentium alias! Ipsa quos eligendi distinctio perspiciatis delectus, ex animi molestiae id laboriosam neque nam, totam illum corrupti eum explicabo accusantium voluptatibus sequi? Eos, accusantium. Iure suscipit, exercitationem saepe doloremque libero accusantium, eaque quisquam nemo ipsum quaerat dolorem vel quos praesentium ullam officiis eius quia expedita eum veritatis quis porro, unde debitis. Tenetur debitis exercitationem officiis eos voluptate tempore nostrum similique officia consequuntur porro nesciunt soluta neque totam adipisci, deserunt quaerat!</p>
+        </section>
+        <section class = "carousel">
+            <h2 class="projectTitle sideTitle">[ PROJECTS# ]</h2>
+            <div class="slideSelector">
+                <button id="next" class="buttons">[ NEXT# ]</button>
+                <div class="slide slide0">1</div>
+                <div class="slide slide1">2</div>
+                <div class="slide slide2">3</div>
+                <button id="back" class="buttons"> [ BACK# ]</button>
+            </div>
+            <div class="slide slide3">DISPLAY</div>
+        </section>
     </main>
+    <footer></footer>
 </body>
 </html>
