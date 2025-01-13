@@ -170,10 +170,11 @@ header{
 .slideContainer{
     display: flex;
     justify-content: space-around;
-    background-color: var(--dark-gray);
+    background-color: rgb(31,31,31);
     padding: 10px;
-    background-image: radial-gradient(circle, var(--gray)1px, transparent 1px);
-    background-size: 15px 15px;
+    background-image: radial-gradient(circle, var(--dark-gray)1px, transparent 1px) 
+    linear-gradient(black,transparent);
+    background-size: 10px 10px, 0px 0px;
 }
 .slide{
     width: 330px;
