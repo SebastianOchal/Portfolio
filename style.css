@@ -102,14 +102,15 @@ body{
 }
 /* *Background divs */
 /* *Content */
-header{
-    position: fixed;
-}
+
 #navContainer{
     display: flex;
     flex-wrap: wrap;
+    position: fixed;
+    z-index: 10;
+    pointer-events: none;
 }
-.sideTitle{
+#navMenu{
     writing-mode: vertical-rl;
     position: relative;
     transform: rotate(180deg);
@@ -120,22 +121,22 @@ header{
     font-size: clamp(16px, 2vw, 24px);
     text-align: center;
     background-image: linear-gradient(90deg, rgb(31,31,31),transparent 90%);
+    pointer-events: auto;
 }
-#navMenu{
-    z-index: 1;
-}
+
 .navMenuHover{
     color: var(--highlight-blue);
+    pointer-events: auto;
 }
 #linkContainer{
     display: flex;
     flex-direction: column;
     position: relative;
-    right: 0;
     z-index: 2;
     transition: 0.7s;
     background-image: linear-gradient(135deg, transparent,var(--dark-gray) 50%, transparent 50%);
     mask-image: radial-gradient(at top left,black 40%,transparent);
+    pointer-events: auto;
 }
 
 .heroTitle{
@@ -167,30 +168,64 @@ header{
 .aboutPara{
     margin:0
 }
+.projectsContainer{
+    display: flex;
+    align-items: center;
+    background-color: rgb(31,31,31);
+    padding: 10px;
+    background-image: radial-gradient(circle, var(--dark-gray)1px, transparent 1px);
+    background-size: 10px 10px;
+}
+.projectsTitle{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    position: relative;
+    z-index: 1;
+    margin: 10px 0 0 6px;
+    padding-left: 10px;
+    border-Left: aliceblue 1px solid;
+    border-top: transparent 60px solid;
+    border-bottom: transparent 60px solid;
+    font-size: clamp(16px, 2vw, 24px);
+    text-align: center;
+    background-image: linear-gradient(90deg, rgb(31,31,31),transparent 90%);
+
+}
 .slideContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 563px;
+    margin: 0 10px 0 120px;
+}
+.slide{
+    width: 300px;
+    height: 169px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    transition: 0.5s;
+}
+.slide0{
+    position: absolute;
+    width: 1000px;
+    height: 563px;
+    transform: translateX(70%);
+    z-index: 4;
+}
+.skillsContainer{
     display: flex;
     justify-content: space-around;
     background-color: rgb(31,31,31);
     padding: 10px;
-    background-image: radial-gradient(circle, var(--dark-gray)1px, transparent 1px) 
-    linear-gradient(black,transparent);
-    background-size: 10px 10px, 0px 0px;
+    background-image: radial-gradient(circle, var(--dark-gray)1px, transparent 1px);
+    background-size: 10px 10px;
 }
-.slide{
-    width: 330px;
-    height: 220px;
-}
-.slide0{
-    background-color: blue;
-}
-.slide1{
-    background-color: tomato;
-}
-.slide2{
-    background-color: turquoise;
-}
-.slide3{
-    background-color: yellowgreen;
+.skillImg{
+    height: 100px;
+    width: 100px;
 }
 footer{
     height: 1000px;
