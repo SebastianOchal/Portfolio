@@ -171,10 +171,8 @@ body{
 .projectsContainer{
     display: flex;
     align-items: center;
-    background-color: rgb(31,31,31);
+    background-image: linear-gradient(black,transparent);
     padding: 10px;
-    background-image: radial-gradient(circle, var(--dark-gray)1px, transparent 1px);
-    background-size: 10px 10px;
 }
 .projectsTitle{
     writing-mode: vertical-lr;
@@ -189,6 +187,12 @@ body{
     font-size: clamp(16px, 2vw, 24px);
     text-align: center;
     background-image: linear-gradient(90deg, rgb(31,31,31),transparent 90%);
+
+}
+.projectsBackground{
+    background-color: rgb(31,31,31);
+    background-image: radial-gradient(circle, var(--dark-gray)1px, transparent 1px);
+    background-size: 10px 10px;
 
 }
 .slideContainer{
@@ -217,15 +221,26 @@ body{
 }
 .skillsContainer{
     display: flex;
+    flex-direction: column;
+}
+.skillTitleContainer{
+    display: flex;
+    justify-content: center;
+}
+.imgContainer{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgb(31,31,31);
     padding: 10px;
-    background-image: radial-gradient(circle, var(--dark-gray)1px, transparent 1px);
-    background-size: 10px 10px;
 }
 .skillImg{
     height: 100px;
     width: 100px;
+}
+.skillTitle{
+    border-bottom: 1px aliceblue solid;
+    border-left: 60px transparent solid;
+    border-right: 60px transparent solid;
 }
 footer{
     height: 1000px;
