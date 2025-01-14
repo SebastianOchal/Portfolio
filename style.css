@@ -242,8 +242,14 @@ body{
     border-left: 60px transparent solid;
     border-right: 60px transparent solid;
 }
-footer{
-    height: 1000px;
+#contact{
+    display: flex;
+    justify-content: center;
+}
+.contactTitle{
+    border-bottom: 1px aliceblue solid;
+    border-left: 60px transparent solid;
+    border-right: 60px transparent solid;
 }
 @media (max-width: 1279px){
 }
