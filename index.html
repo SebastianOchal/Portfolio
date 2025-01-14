@@ -22,35 +22,66 @@
         </div>
     </div>
         <nav id="navContainer">
-            <h2 id="navMenu">[ NAVIGATION# ]</h2>
+            <h2 id="navMenu" class="roboto-light">[ NAVIGATION# ]</h2>
             <div id = "linkContainer">
-                <h1 class = "heroTitle">SEBASTIAN OCHAL</h1>
-                <a class="navLinks" href="#contact">CONTACT ME</a><a class="navLinks" href="#projects">PROJECTS</a><a class="navLinks" href="#about">ABOUT</a>
+                <h1 class = "heroTitle roboto-light">SEBASTIAN OCHAL</h1>
+                <a class="links roboto-light" href="#contact">CONTACT ME</a><a class="links roboto-light" href="#projects">PROJECTS</a><a class="links roboto-light" href="#about">ABOUT</a>
             </div>
         </nav>
     <main>
         <section class = "aboutContainer">
-            <h2 id="about">[ ABOUT# ]</h2>
-            <p class="aboutPara">Hello, I'm Sebastian, an aspiring Software & Game Developer eager to build my experience in the industry. While my portfolio is still growing, I am a fast learner and a creative problem solver with a deep passion for programming and game design. If you'd like to collaborate or discuss opportunities, please feel free to get in touch!</p>
+            <div class = "aboutBackground">
+                <h2 id="about" class="roboto-light">[ ABOUT# ]</h2>
+                <p class="aboutPara roboto-light">Hello, I'm Sebastian, an aspiring Software & Game Developer eager to build my experience in the industry. While my portfolio is still growing, I am a fast learner and a creative problem solver with a deep passion for programming and game design. If you'd like to collaborate or discuss opportunities, please feel free to get in touch!</p>
+            </div>
         </section>
         <div class ="projectsBackground">
         <div class="projectsContainer">
-                <h2 id="projects">[ PROJECTS# ]</h2>
+                <h2 id="projects" class="roboto-light">[ PROJECTS# ]</h2>
                 <section class = "slideContainer">
                     <button class = "controls" id = "next">next</button>
-                    <div class = "slide slide0"><h2>slide0</h2>
-                    <div class="projectsInfo"></div>
-                
+                    <div class = "slide slide0">
+                        <div class="projectsInfo">
+                            <div class="info info0 ">
+                                <h3 class = "infoTitle roboto-light">Simon/Follow The Pattern</h3>
+                                <p class="infoPara roboto-light">I developed this game primarily using JavaScript. The core gameplay involves following a given pattern. To increase the complexity of the project, I added a feature allowing users to resize the grid while the game is inactive. This presented several challenges, the most significant being that resizing the grid initially caused it to stop responding to user inputs. Resolving this issue required considerable effort and troubleshooting.
+                                </p>
+                                <p class="infoPara roboto-light">Moving forward, I aim to create more advanced games while building on the skills I acquired during this project.Feel free to check out the project using the link provided.</p>
+                                <div class = infoLinkCon><a class="links roboto-light" href="https://sebastianochal.github.io/JavaScriptGames/">Link</a></div>
+                            </div>
+                            <div class="info">
+                                <h3 class = "infoTitle roboto-light roboto-light">Image Slider</h3>
+                                <p class="infoPara roboto-light">
+                                    This is a prototype version of the image showcased in my portfolio. This project was instrumental in building my foundational CSS and JavaScript skills, particularly in manipulating arrays, managing CSS positions, and creating smooth transitions. The most challenging aspect was ensuring the images looped correctly without overlapping or disappearing unexpectedly.
+                                </p>
+                                <p class="infoPara roboto-light">
+                                    Successfully overcoming these challenges gave me the confidence to tackle more ambitious projects in my portfolio and fully embrace my creativity.
+                                </p>
+                                <div class = infoLinkCon><a class="links roboto-light" href="https://sebastianochal.github.io/JS_Carousel_Project/">Link</a></div>
+                            </div>
+                            <div class="info">
+                                <h3 class = "infoTitle roboto-light">Python Lists & Dictionaries</h3>
+                                <p class="infoPara roboto-light">This collection of projects is designed to explore working with Python dictionaries, including nested structures. It also features a terminal-based menu, allowing users to interact with the program via text input.</p>
+                                <p class="infoPara roboto-light">Next, I plan to develop a graphical user interface (GUI) to enhance user experience by connecting my scripts to a more intuitive and visually appealing platform.</p>
+                                <p class="infoPara roboto-light">The link below leads to a Github repository containing the code.</p>
+                                <div class = infoLinkCon><a class="links roboto-light" href="https://github.com/SebastianOchal/Python_Projects">Link</a></div>
+                        </div>                    
                     </div>
-                    <div class = "slide slide1"><h2>slide1</h2></div>
-                    <div class = "slide slide2"><h2>slide2</h2></div>
-                    <div class = "slide slide3"><h2>slide3</h2></div>
+                    <div class="info">
+                        <h3 class = "infoTitle roboto-light">Portfolio</h3>
+                        <p class="infoPara roboto-light">This portfolio stands as a showcase of some of my most advanced HTML, CSS, and JavaScript skills learned over an 8-week bootcamp provided by Just IT. One part of the portfolio I am most proud of is the background, which is made entirely using HTML elements with CSS styling applied. A big challenge I faced was that CSS is very good at creating regular patterns but not so good at generating random patterns. As such, I had to use JavaScript to position the stars within my portfolio. This solution made my portfolio more dynamic, as the stars change position when the page is refreshed.</p>
+                        <div class = infoLinkCon><a class="infoLink roboto-light" href="https://sebastianochal.github.io/Portfolio/">Link</a></div>
+                    </div>
+                    </div>
+                    <div class = "slide slide1"></div>
+                    <div class = "slide slide2"></div>
+                    <div class = "slide slide3"></div>
                     <button class = "controls" id = "back">back</button>
                 </section>
             </div>
             <section class="skillsContainer">
                 <div class="skillTitleContainer">
-                    <h2 class="skillTitle">[ SKILLS,KNOWLEDGE & TOOLS]</h2>
+                    <h2 class="skillTitle roboto-light">[ SKILLS,KNOWLEDGE & TOOLS]</h2>
                 </div>
                 <div class="imgContainer">
                     <img class="skillImg" src="./Images/Html.png" alt="HTML Logo">
@@ -63,7 +94,7 @@
                 </div>
             </section>
             </div>
-        <footer id="contact">
+        <footer id="contact" class="roboto-light">
             <h2 class="contactTitle">[ CONTACT ME]</h2>
             <div class = "contactLinksContainer">
                 <a class = "contactLinks" href="https://github.com/SebastianOchal?tab=repositories"><img class = "contactLinks" src="./Images/Github.png" alt="Github Logo"></a>
