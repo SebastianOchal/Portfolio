@@ -164,6 +164,8 @@ body{
 }
 #about{
     margin: 0 0 10px 0;
+    border-bottom: 1px aliceblue solid;
+    border-left: 60px transparent solid;
 }
 .aboutPara{
     margin:0
@@ -174,7 +176,7 @@ body{
     background-image: linear-gradient(black,transparent);
     padding: 10px;
 }
-.projectsTitle{
+#projects{
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     position: relative;
